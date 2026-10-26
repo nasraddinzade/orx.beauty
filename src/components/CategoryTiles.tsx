@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CATEGORIES, products, type Category } from "@/data/products";
+import { getActiveCategories, products, type Category } from "@/data/products";
 import { useLocale } from "@/context/LocaleContext";
 import { fmt } from "@/i18n";
 
@@ -17,6 +17,8 @@ const TILE: Record<Category, string> = {
   dest: "bg-rose/25 text-navy [--dot:var(--gold)]",
 };
 
+const ACTIVE = getActiveCategories();
+
 const counts = products.reduce<Record<string, number>>((acc, p) => {
   acc[p.category] = (acc[p.category] ?? 0) + 1;
   return acc;
@@ -26,13 +28,13 @@ export function CategoryTiles({ compact = false }: { compact?: boolean }) {
   const { t } = useLocale();
   return (
     <div className={`grid grid-cols-2 gap-3 ${compact ? "sm:grid-cols-4" : "sm:grid-cols-4"}`}>
-      {CATEGORIES.map((c) => (
+      {ACTIVE.map((c) => (
         <Link
           key={c}
           href={`/catalog?cat=${c}`}
           className={`group relative flex min-h-[88px] flex-col justify-end overflow-hidden rounded-2xl border border-gold/20 p-3.5 shadow-soft transition-shadow hover:shadow-card ${TILE[c]} ${
             compact ? "min-h-[72px]" : "sm:min-h-[120px]"
-          }`}
+          } ${ACTIVE.length % 2 ? "last:col-span-2 sm:last:col-span-1" : ""}`}
         >
           <span
             aria-hidden="true"

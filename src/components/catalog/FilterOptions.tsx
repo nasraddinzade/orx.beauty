@@ -1,6 +1,6 @@
 "use client";
 
-import { CATEGORIES, NO_BRAND, getBrands, type Category } from "@/data/products";
+import { NO_BRAND, getActiveCategories, getBrands, type Category } from "@/data/products";
 import { useLocale } from "@/context/LocaleContext";
 import type { CatalogState } from "@/lib/catalog";
 
@@ -13,6 +13,7 @@ export type FilterCommonProps = {
 };
 
 const BRAND_VALUES = [...getBrands(), NO_BRAND];
+const ACTIVE_CATEGORIES = getActiveCategories();
 
 function Option({
   label,
@@ -47,7 +48,7 @@ export function CategoryOptions({ state, counts, toggleCat }: FilterCommonProps)
   const { t } = useLocale();
   return (
     <div>
-      {CATEGORIES.map((c) => (
+      {ACTIVE_CATEGORIES.map((c) => (
         <Option
           key={c}
           label={t.categories[c]}

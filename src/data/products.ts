@@ -175,20 +175,6 @@ const T = {
       ru: "Прокрасить ресницы зигзагом от корней к кончикам. При необходимости нанести второй слой.",
     },
   },
-  eyePencil: {
-    description: {
-      az: "Yumşaq göz qələmi dəqiq xətt çəkir, sürtülmür və gün boyu qalır.",
-      ru: "Мягкий карандаш для глаз рисует чёткую линию, не смазывается и держится весь день.",
-    },
-    ingredients: {
-      az: "Siklopentasiloksan, sintetik mum, mikrokristal mum, piqmentlər, E vitamini.",
-      ru: "Циклопентасилоксан, синтетический воск, микрокристаллический воск, пигменты, витамин E.",
-    },
-    usage: {
-      az: "Kirpik xətti boyunca çəkin. Ağ qələmlə alt su xətti böyüdülmüş göz effekti verir.",
-      ru: "Провести вдоль линии ресниц. Белым карандашом по нижней слизистой — эффект распахнутого взгляда.",
-    },
-  },
   eyeshadow: {
     description: {
       az: "Göz kölgəsi paleti: mat və parıltılı çalarlar gündəlik və axşam makiyajı üçün. Yüksək piqmentli, asan paylanır.",
@@ -201,34 +187,6 @@ const T = {
     usage: {
       az: "Açıq çaları bütün göz qapağına, tündü xarici küncə, parıltılını qapağın ortasına vurun.",
       ru: "Светлый оттенок на всё веко, тёмный во внешний угол, сияющий в центр века.",
-    },
-  },
-  lipCombo: {
-    description: {
-      az: "Dodaq dəsti: kontur qələmi, mat pomada, parıltı və balzam — bir çalarda, bir-birinə uyğun.",
-      ru: "Набор для губ: контурный карандаш, матовая помада, блеск и бальзам — в одном оттенке, подобраны друг к другу.",
-    },
-    ingredients: {
-      az: "Mum, bitki yağları, piqmentlər, E vitamini, ətir.",
-      ru: "Воски, растительные масла, пигменты, витамин E, отдушка.",
-    },
-    usage: {
-      az: "Əvvəl kontur, sonra pomada, üstündən parıltı; gecə balzam.",
-      ru: "Сначала контур, затем помада, сверху блеск; на ночь — бальзам.",
-    },
-  },
-  lipBalm: {
-    description: {
-      az: "Şəffaf dodaq balzamı quruluğu aradan qaldırır, yumşaq parıltı verir, pomada altına uyğundur.",
-      ru: "Прозрачный бальзам для губ снимает сухость, даёт мягкий блеск, подходит под помаду.",
-    },
-    ingredients: {
-      az: "Şi yağı, arı mumu, hindistan cevizi yağı, E vitamini.",
-      ru: "Масло ши, пчелиный воск, кокосовое масло, витамин E.",
-    },
-    usage: {
-      az: "Lazım olduqca dodaqlara çəkin.",
-      ru: "Наносить на губы по мере необходимости.",
     },
   },
   lipGloss: {
@@ -329,20 +287,6 @@ const T = {
       ru: "После макияжа распылить с расстояния 20–25 см по схеме «X» и «T».",
     },
   },
-  hairSerum: {
-    description: {
-      az: "Saç serumu uclarını hamarlayır, parıltı verir və qıvrılmanı azaldır. Yağlı iz qoymur.",
-      ru: "Сыворотка для волос сглаживает кончики, придаёт блеск и уменьшает пушистость. Не оставляет жирного следа.",
-    },
-    ingredients: {
-      az: "Siklopentasiloksan, dimetikonol, arqan yağı, keratin, E vitamini.",
-      ru: "Циклопентасилоксан, диметиконол, аргановое масло, кератин, витамин E.",
-    },
-    usage: {
-      az: "Nəm və ya quru saçın uclarına 1–2 damla vurun, kökə dəyməyin.",
-      ru: "1–2 капли на кончики влажных или сухих волос, не затрагивая корни.",
-    },
-  },
   brushSet: {
     description: {
       az: "Fırça dəsti üz və göz makiyajı üçün: yumşaq sintetik tüklər, rahat tutacaq, tük tökmür.",
@@ -355,48 +299,6 @@ const T = {
     usage: {
       az: "Həftədə bir dəfə yumşaq şampunla yuyun və üfüqi vəziyyətdə qurudun.",
       ru: "Раз в неделю мыть мягким шампунем и сушить горизонтально.",
-    },
-  },
-  brush: {
-    description: {
-      az: "İkitərəfli yanaq fırçası: bir tərəf ənlik və bronzer, digəri highlighter üçün.",
-      ru: "Двусторонняя кисть для щёк: одна сторона для румян и бронзера, другая для хайлайтера.",
-    },
-    ingredients: {
-      az: "Sintetik tük, alüminium qoltuq, plastik tutacaq.",
-      ru: "Синтетический ворс, алюминиевая обойма, пластиковая ручка.",
-    },
-    usage: {
-      az: "Məhsulu fırçaya götürüb artığını çırpın, yumşaq dairəvi hərəkətlərlə paylayın.",
-      ru: "Набрать продукт, стряхнуть излишки, растушевать мягкими круговыми движениями.",
-    },
-  },
-  sponge: {
-    description: {
-      az: "Makiyaj süngəri tonal kremi və konsileri izsiz paylayır. Nəm halda genişlənir və yumşalır.",
-      ru: "Спонж для макияжа растушёвывает тон и консилер без следов. Во влажном виде увеличивается и становится мягче.",
-    },
-    ingredients: {
-      az: "Lateks tərkibsiz poliuretan köpük.",
-      ru: "Полиуретановая пена без латекса.",
-    },
-    usage: {
-      az: "Su ilə isladıb sıxın, məhsulu döyəcləyici hərəkətlərlə vurun. Hər istifadədən sonra yuyun.",
-      ru: "Смочить водой и отжать, наносить похлопывающими движениями. Мыть после каждого использования.",
-    },
-  },
-  bag: {
-    description: {
-      az: "Üç ölçüdə kosmetik çanta dəsti: böyüyü səyahət üçün, kiçiyi çantaya. Su keçirməyən astar.",
-      ru: "Набор из трёх косметичек разного размера: большая для путешествий, маленькая в сумку. Водонепроницаемая подкладка.",
-    },
-    ingredients: {
-      az: "Polyester, PU astar, metal zəncir.",
-      ru: "Полиэстер, подкладка PU, металлическая молния.",
-    },
-    usage: {
-      az: "Nəm salfetlə silin, maşında yumayın.",
-      ru: "Протирать влажной салфеткой, не стирать в машине.",
     },
   },
   giftSet: {
@@ -451,7 +353,7 @@ export const products: Product[] = [
     price: 18.9, // подтверждена
     oldPrice: 27, // подтверждена
     category: "uz",
-    images: [],
+    images: ["/products/skinsensual-bb.jpg"],
     ...T.bb,
   },
   {
@@ -498,10 +400,14 @@ export const products: Product[] = [
     id: 7,
     slug: "skinsensual-concealer",
     brand: "SkinSensual",
-    name: { az: "Magic Face konsiler", ru: "Magic Face консилер" },
+    // У бренда единственный консилер — Magic Eye Duo Repair & CC; название уточнено по пакшоту.
+    name: {
+      az: "Magic Eye Duo Repair & CC konsiler",
+      ru: "Magic Eye Duo Repair & CC консилер",
+    },
     price: 16.9, // qiymət dəqiqləşdirilməlidir
     category: "uz",
-    images: [],
+    images: ["/products/skinsensual-concealer.jpg"],
     ...T.concealer,
   },
   {
@@ -542,8 +448,8 @@ export const products: Product[] = [
     },
     price: 30, // подтверждена
     category: "enlik",
-    // Оба кадра с mcgrocer.com не скачались (HTTP-ошибка) — плитка-плейсхолдер.
-    images: [],
+    // Официальный пакшот Technic «Shade, Light & Bright» (8 рефилов).
+    images: ["/products/technic-palette.jpg"],
     isBestseller: true,
     ...T.facePalette,
   },
@@ -576,20 +482,21 @@ export const products: Product[] = [
     id: 13,
     slug: "huda-lovefest",
     brand: "Huda Beauty",
-    name: { az: "Lovefest ənlik", ru: "Lovefest румяна" },
+    name: { az: "Lovefest krem ənlik", ru: "Lovefest кремовые румяна" },
     price: 32, // qiymət dəqiqləşdirilməlidir
     category: "enlik",
-    images: [],
+    images: ["/products/huda-lovefest.jpg"],
     ...T.blush,
   },
   {
     id: 14,
     slug: "ct-mega-mat",
     brand: "Charlotte Tilbury",
-    name: { az: "Mega Mat bronzer", ru: "Mega Mat бронзер" },
+    // У бренда нет «Mega Mat»; матовый бронзер называется Airbrush Bronzer.
+    name: { az: "Airbrush Bronzer mat bronzer, Medium", ru: "Airbrush Bronzer матовый бронзер, Medium" },
     price: 89, // qiymət dəqiqləşdirilməlidir
     category: "enlik",
-    images: [],
+    images: ["/products/ct-mega-mat.jpg"],
     ...T.bronzer,
   },
   {
@@ -614,36 +521,6 @@ export const products: Product[] = [
     ...T.mascara,
   },
   {
-    id: 17,
-    slug: "eyeliner-fine",
-    brand: "",
-    name: { az: "İncə uclu eyeliner qələmi", ru: "Подводка-фломастер с тонким кончиком" },
-    price: 11.9, // qiymət dəqiqləşdirilməlidir
-    category: "goz",
-    images: [],
-    ...T.eyePencil,
-  },
-  {
-    id: 18,
-    slug: "white-pencil",
-    brand: "",
-    name: { az: "Ağ göz qələmi", ru: "Белый карандаш для глаз" },
-    price: 6.9, // qiymət dəqiqləşdirilməlidir
-    category: "goz",
-    images: [],
-    ...T.eyePencil,
-  },
-  {
-    id: 19,
-    slug: "eyeshadow-15",
-    brand: "",
-    name: { az: "15 tonluq göz kölgəsi paleti", ru: "Палетка теней, 15 оттенков" },
-    price: 27.9, // qiymət dəqiqləşdirilməlidir
-    category: "goz",
-    images: [],
-    ...T.eyeshadow,
-  },
-  {
     id: 20,
     slug: "topface-maestro",
     brand: "Topface",
@@ -656,27 +533,6 @@ export const products: Product[] = [
     images: ["/products/topface-maestro.jpg"],
     isNew: true,
     ...T.eyeshadow,
-  },
-  {
-    id: 21,
-    slug: "lip-combo",
-    brand: "",
-    name: { az: "Lip combo dəsti, 4 ədəd", ru: "Lip combo набор, 4 шт." },
-    price: 24, // qiymət dəqiqləşdirilməlidir
-    category: "dodaq",
-    images: [],
-    isBestseller: true,
-    ...T.lipCombo,
-  },
-  {
-    id: 22,
-    slug: "clear-lip-balm",
-    brand: "",
-    name: { az: "Şəffaf lip balm", ru: "Прозрачный бальзам для губ" },
-    price: 9.9, // qiymət dəqiqləşdirilməlidir
-    category: "dodaq",
-    images: [],
-    ...T.lipBalm,
   },
   {
     id: 23,
@@ -746,17 +602,18 @@ export const products: Product[] = [
     id: 27,
     slug: "creamco-vitc",
     brand: "Cream Co.",
-    name: { az: "Vitamin C 15% serum", ru: "Сыворотка с витамином C 15%" },
+    // У бренда серум с витамином C называется SOS Serum; концентрация 15% на упаковке не указана.
+    name: { az: "SOS Serum, C vitamini ilə", ru: "SOS Serum с витамином C" },
     price: 29.9, // qiymət dəqiqləşdirilməlidir
     category: "baxim",
-    images: [],
+    images: ["/products/creamco-vitc.jpg"],
     description: {
-      az: "C vitamini 15% serum: tonu işıqlandırır, ləkələri azaldır və dərini sərbəst radikallardan qoruyur.",
-      ru: "Сыворотка с витамином C 15%: придаёт сияние, уменьшает пигментацию и защищает от свободных радикалов.",
+      az: "İki növ C vitamini, niasinamid və alfa-arbutinlə serum: tonu işıqlandırır, ləkələri azaldır və dərini sərbəst radikallardan qoruyur.",
+      ru: "Сыворотка с двумя формами витамина C, ниацинамидом и альфа-арбутином: придаёт сияние, уменьшает пигментацию и защищает от свободных радикалов.",
     },
     ingredients: {
-      az: "Su, askorbin turşusu 15%, ferul turşusu, E vitamini, gliserin, hialuron turşusu.",
-      ru: "Вода, аскорбиновая кислота 15%, феруловая кислота, витамин E, глицерин, гиалуроновая кислота.",
+      az: "Su, askorbin turşusu, askorbil qlükozid, niasinamid, alfa-arbutin, gliserin, hialuron turşusu.",
+      ru: "Вода, аскорбиновая кислота, аскорбил глюкозид, ниацинамид, альфа-арбутин, глицерин, гиалуроновая кислота.",
     },
     usage: T.serum.usage,
   },
@@ -796,37 +653,15 @@ export const products: Product[] = [
     ...T.soap,
   },
   {
-    id: 31,
-    slug: "hoppa-mist",
-    brand: "HOPPA",
-    name: { az: "Mist və fix sprey", ru: "Мист и фиксирующий спрей" },
-    price: 15.9, // qiymət dəqiqləşdirilməlidir
-    category: "baxim",
-    images: [],
-    isNew: true,
-    ...T.mist,
-  },
-  {
     id: 32,
     slug: "sport-fix",
-    brand: "Sport Fix",
-    name: { az: "Makiyaj sabitləyici sprey", ru: "Спрей-фиксатор макияжа" },
+    brand: "Revolution",
+    name: { az: "Sport Fix makiyaj sabitləyici sprey", ru: "Sport Fix спрей-фиксатор макияжа" },
     price: 17.9, // подтверждена
     category: "baxim",
-    images: [],
+    images: ["/products/sport-fix.jpg"],
     isBestseller: true,
     ...T.mist,
-  },
-  {
-    id: 33,
-    slug: "kamali-serum",
-    brand: "Kamali",
-    name: { az: "Liama saç serumu", ru: "Liama сыворотка для волос" },
-    price: 13.5, // подтверждена
-    category: "sac",
-    images: [],
-    isBestseller: true,
-    ...T.hairSerum,
   },
   {
     id: 34,
@@ -840,65 +675,32 @@ export const products: Product[] = [
     ...T.brushSet,
   },
   {
-    id: 35,
-    slug: "technic-duo-brush",
-    brand: "Technic",
-    name: {
-      az: "PRO ikitərəfli yanaq fırçası",
-      ru: "PRO двусторонняя кисть для щёк",
-    },
-    price: 12.9, // qiymət dəqiqləşdirilməlidir
-    category: "firca",
-    images: [],
-    ...T.brush,
-  },
-  {
-    id: 36,
-    slug: "makeup-sponge",
-    brand: "",
-    name: { az: "Makiyaj süngəri", ru: "Спонж для макияжа" },
-    price: 5.9, // qiymət dəqiqləşdirilməlidir
-    category: "firca",
-    images: [],
-    ...T.sponge,
-  },
-  {
-    id: 37,
-    slug: "cosmetic-bag-3",
-    brand: "",
-    name: { az: "Kosmetik çanta, 3 ədəd dəst", ru: "Косметички, набор 3 шт." },
-    price: 29.9, // qiymət dəqiqləşdirilməlidir
-    category: "firca",
-    images: [],
-    ...T.bag,
-  },
-  {
     id: 38,
     slug: "sheglam-gift",
     brand: "Sheglam",
-    name: { az: "Hədiyyə dəsti", ru: "Подарочный набор" },
+    name: { az: "Lunar & Stellar hədiyyə dəsti", ru: "Подарочный набор Lunar & Stellar" },
     price: 22, // подтверждена
     oldPrice: 25.5, // подтверждена
     category: "dest",
-    images: [],
+    images: ["/products/sheglam-gift.jpg"],
     isBestseller: true,
     ...T.giftSet,
   },
   {
     id: 39,
     slug: "wonka-set",
-    brand: "",
+    brand: "Sheglam",
     name: {
-      az: "Willy Wonka kosmetika dəsti",
-      ru: "Набор косметики Willy Wonka",
+      az: "Willy Wonka × Sheglam tam kolleksiya dəsti",
+      ru: "Willy Wonka × Sheglam полный набор коллекции",
     },
     price: 155, // подтверждена
     oldPrice: 215, // подтверждена
     category: "dest",
-    images: [],
+    images: ["/products/wonka-set.jpg"],
     description: {
-      az: "Willy Wonka mövzulu böyük kosmetika dəsti: göz kölgələri, dodaq məhsulları, ənlik və aksesuarlar bir qutuda. Böyük hədiyyə üçün.",
-      ru: "Большой набор косметики в стиле Willy Wonka: тени, средства для губ, румяна и аксессуары в одной коробке. Для большого подарка.",
+      az: "Willy Wonka × Sheglam kolleksiyasının tam dəsti, 12 məhsul: göz kölgəsi paleti, dodaq parıltıları, qələmlər, ənlik, highlighter və fırça. Böyük hədiyyə üçün.",
+      ru: "Полный набор коллекции Willy Wonka × Sheglam, 12 предметов: палетка теней, блески, карандаши, румяна, хайлайтер и кисть. Для большого подарка.",
     },
     ingredients: T.giftSet.ingredients,
     usage: T.giftSet.usage,
@@ -918,3 +720,8 @@ export function getBrands(): string[] {
 
 /** Значение фильтра для товаров без бренда. */
 export const NO_BRAND = "_none";
+
+/** Категории, в которых есть хотя бы один товар (пустые не показываем). */
+export function getActiveCategories(): Category[] {
+  return CATEGORIES.filter((c) => products.some((p) => p.category === c));
+}
