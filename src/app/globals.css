@@ -38,7 +38,12 @@ html {
 }
 
 body {
-  background: var(--cream);
+  /* Кремовый фон с мягким розово-золотым свечением сверху: теплее и «бьюти». */
+  background:
+    radial-gradient(900px 500px at 85% -5%, rgba(227, 162, 168, 0.35), transparent 65%),
+    radial-gradient(700px 400px at -10% 15%, rgba(201, 162, 39, 0.14), transparent 60%),
+    var(--cream);
+  background-attachment: scroll;
   color: var(--navy);
   font-family: var(--font-sans);
   overflow-x: hidden;

@@ -21,32 +21,32 @@ export function Footer() {
 
           <dl className="grid gap-5 text-sm sm:grid-cols-2 lg:grid-cols-4">
             <div className="flex gap-3">
-              <PinIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
+              <PinIcon className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
               <div>
                 <dt className="text-cream/60">{t.footer.address}</dt>
                 <dd className="mt-0.5">{t.footer.addressValue}</dd>
               </div>
             </div>
             <div className="flex gap-3">
-              <PhoneIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
+              <PhoneIcon className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
               <div>
                 <dt className="text-cream/60">{t.footer.phone}</dt>
                 <dd className="mt-0.5">
-                  <a href={STORE.phoneHref} className="hover:text-teal">
+                  <a href={STORE.phoneHref} className="hover:text-rose">
                     {STORE.phone}
                   </a>
                 </dd>
               </div>
             </div>
             <div className="flex gap-3">
-              <ClockIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
+              <ClockIcon className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
               <div>
                 <dt className="text-cream/60">{t.footer.hours}</dt>
                 <dd className="mt-0.5">{t.footer.hoursValue}</dd>
               </div>
             </div>
             <div className="flex gap-3">
-              <InstagramIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal" />
+              <InstagramIcon className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
               <div>
                 <dt className="text-cream/60">{t.footer.instagram}</dt>
                 <dd className="mt-0.5">
@@ -54,7 +54,7 @@ export function Footer() {
                     href={STORE.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-teal"
+                    className="hover:text-rose"
                   >
                     {STORE.instagram}
                   </a>

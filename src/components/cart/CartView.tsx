@@ -55,7 +55,7 @@ export function CartView() {
             <p className="mt-2 text-sm text-muted">{t.cart.emptyText}</p>
             <Link
               href="/catalog"
-              className="mt-5 inline-flex h-12 items-center rounded-xl bg-navy px-6 text-sm font-semibold text-ivory hover:bg-teal"
+              className="mt-5 inline-flex h-12 items-center rounded-xl bg-navy px-6 text-sm font-semibold text-ivory hover:bg-rose hover:text-navy"
             >
               {t.cart.goCatalog}
             </Link>
@@ -89,7 +89,7 @@ export function CartView() {
                         </div>
                         <Link
                           href={`/product/${product.slug}`}
-                          className="line-clamp-2 text-sm font-medium leading-snug text-navy hover:text-teal"
+                          className="line-clamp-2 text-sm font-medium leading-snug text-navy hover:text-navy/60"
                         >
                           {name}
                         </Link>
@@ -130,7 +130,7 @@ export function CartView() {
             </dl>
             <Link
               href="/checkout"
-              className="mt-4 inline-flex h-12 w-full items-center justify-center rounded-xl bg-teal text-sm font-semibold text-ivory hover:bg-navy"
+              className="mt-4 inline-flex h-12 w-full items-center justify-center rounded-xl bg-navy text-sm font-semibold text-ivory hover:bg-rose hover:text-navy"
             >
               {t.cart.checkout}
             </Link>

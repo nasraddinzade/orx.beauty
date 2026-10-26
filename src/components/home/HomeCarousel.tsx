@@ -102,7 +102,7 @@ export function HomeCarousel() {
       <div className="mt-2 text-right">
         <Link
           href={tab === "sale" ? "/catalog?sort=asc" : "/catalog"}
-          className="text-sm font-semibold text-teal hover:text-navy"
+          className="text-sm font-semibold text-navy underline decoration-gold underline-offset-4 hover:decoration-rose"
         >
           {t.home.seeAll} →
         </Link>

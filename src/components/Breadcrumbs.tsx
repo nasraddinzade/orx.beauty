@@ -14,7 +14,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
               {i > 0 && <span className="mx-1.5">/</span>}
               <li className={last ? "line-clamp-1 text-navy" : ""}>
                 {item.href && !last ? (
-                  <Link href={item.href} className="hover:text-teal">
+                  <Link href={item.href} className="hover:text-navy/60">
                     {item.label}
                   </Link>
                 ) : (

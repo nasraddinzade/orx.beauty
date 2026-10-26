@@ -99,7 +99,7 @@ export function CheckoutFlow() {
   }
 
   const inputCls = (invalid?: boolean) =>
-    `h-12 w-full rounded-xl border bg-ivory px-3.5 text-[15px] text-navy outline-none transition-colors placeholder:text-muted/70 focus:border-teal ${
+    `h-12 w-full rounded-xl border bg-ivory px-3.5 text-[15px] text-navy outline-none transition-colors placeholder:text-muted/70 focus:border-gold ${
       invalid ? "border-rose" : "border-gold/40"
     }`;
 
@@ -107,7 +107,7 @@ export function CheckoutFlow() {
   if (stage === "success") {
     return (
       <div className="mx-auto max-w-lg px-4 py-12 text-center">
-        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-teal text-ivory">
+        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-rose text-navy">
           <CheckIcon className="h-8 w-8" />
         </div>
         <h1 className="mt-5 font-serif text-3xl font-semibold text-navy">{t.success.title}</h1>
@@ -120,7 +120,7 @@ export function CheckoutFlow() {
         <div className="mt-7 flex flex-col gap-2 sm:flex-row sm:justify-center">
           <Link
             href="/catalog"
-            className="inline-flex h-12 items-center justify-center rounded-xl bg-navy px-6 text-sm font-semibold text-ivory hover:bg-teal"
+            className="inline-flex h-12 items-center justify-center rounded-xl bg-navy px-6 text-sm font-semibold text-ivory hover:bg-rose hover:text-navy"
           >
             {t.success.catalog}
           </Link>
@@ -144,7 +144,7 @@ export function CheckoutFlow() {
           <p className="text-navy">{t.checkout.emptyCart}</p>
           <Link
             href="/catalog"
-            className="mt-5 inline-flex h-12 items-center rounded-xl bg-navy px-6 text-sm font-semibold text-ivory hover:bg-teal"
+            className="mt-5 inline-flex h-12 items-center rounded-xl bg-navy px-6 text-sm font-semibold text-ivory hover:bg-rose hover:text-navy"
           >
             {t.cart.goCatalog}
           </Link>
@@ -237,7 +237,7 @@ export function CheckoutFlow() {
                   <label
                     key={m}
                     className={`flex cursor-pointer items-start gap-3 rounded-xl border p-3 transition-colors ${
-                      checked ? "border-teal bg-teal/10" : "border-gold/30 hover:bg-cream"
+                      checked ? "border-rose bg-rose/25" : "border-gold/30 hover:bg-cream"
                     }`}
                   >
                     <input
@@ -246,7 +246,7 @@ export function CheckoutFlow() {
                       value={m}
                       checked={checked}
                       onChange={() => set("method", m)}
-                      className="mt-1 h-4 w-4 accent-teal"
+                      className="mt-1 h-4 w-4 accent-navy"
                     />
                     <span className="flex-1">
                       <span className="block text-sm font-medium text-navy">
@@ -297,7 +297,7 @@ export function CheckoutFlow() {
                 value={form.comment}
                 onChange={(e) => set("comment", e.target.value)}
                 placeholder={t.checkout.commentPlaceholder}
-                className="w-full rounded-xl border border-gold/40 bg-ivory px-3.5 py-3 text-[15px] text-navy outline-none transition-colors placeholder:text-muted/70 focus:border-teal"
+                className="w-full rounded-xl border border-gold/40 bg-ivory px-3.5 py-3 text-[15px] text-navy outline-none transition-colors placeholder:text-muted/70 focus:border-gold"
               />
             </div>
           </fieldset>
@@ -311,7 +311,7 @@ export function CheckoutFlow() {
             </Link>
             <button
               type="submit"
-              className="inline-flex h-12 items-center justify-center rounded-xl bg-navy px-6 text-sm font-semibold text-ivory hover:bg-teal"
+              className="inline-flex h-12 items-center justify-center rounded-xl bg-navy px-6 text-sm font-semibold text-ivory hover:bg-rose hover:text-navy"
             >
               {t.checkout.next}
             </button>
@@ -419,7 +419,7 @@ export function CheckoutFlow() {
                 disabled={stage === "paying"}
                 onClick={pay}
                 aria-busy={stage === "paying"}
-                className="inline-flex h-12 min-w-[200px] items-center justify-center gap-2 rounded-xl bg-teal px-6 text-sm font-semibold text-ivory transition-colors hover:bg-navy disabled:cursor-wait disabled:opacity-80"
+                className="inline-flex h-12 min-w-[200px] items-center justify-center gap-2 rounded-xl bg-navy px-6 text-sm font-semibold text-ivory transition-colors hover:bg-rose hover:text-navy disabled:cursor-wait disabled:opacity-80"
               >
                 {stage === "paying" ? (
                   <>

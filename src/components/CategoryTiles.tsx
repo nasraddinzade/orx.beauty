@@ -5,16 +5,16 @@ import { CATEGORIES, products, type Category } from "@/data/products";
 import { useLocale } from "@/context/LocaleContext";
 import { fmt } from "@/i18n";
 
-/** Фоны плиток по категориям (те же цвета, что у плейсхолдеров). */
+/** Светлые пастельные плитки: фон, цвет текста и цвет декоративного круга. */
 const TILE: Record<Category, string> = {
-  uz: "bg-cream text-navy",
-  goz: "bg-navy text-cream",
-  dodaq: "bg-rose text-navy",
-  enlik: "bg-cream text-gold",
-  baxim: "bg-teal text-ivory",
-  sac: "bg-ivory text-teal",
-  firca: "bg-muted text-ivory",
-  dest: "bg-gold text-navy",
+  uz: "bg-ivory text-navy [--dot:var(--rose)]",
+  goz: "bg-cream text-navy [--dot:var(--navy)]",
+  dodaq: "bg-rose/40 text-navy [--dot:var(--rose)]",
+  enlik: "bg-ivory text-navy [--dot:var(--gold)]",
+  baxim: "bg-teal/10 text-navy [--dot:var(--teal)]",
+  sac: "bg-gold/15 text-navy [--dot:var(--gold)]",
+  firca: "bg-cream text-navy [--dot:var(--muted)]",
+  dest: "bg-rose/25 text-navy [--dot:var(--gold)]",
 };
 
 const counts = products.reduce<Record<string, number>>((acc, p) => {
@@ -36,12 +36,12 @@ export function CategoryTiles({ compact = false }: { compact?: boolean }) {
         >
           <span
             aria-hidden="true"
-            className="absolute -right-4 -top-4 h-16 w-16 rounded-full bg-current opacity-10 transition-transform group-hover:scale-125"
+            className="absolute -right-4 -top-4 h-16 w-16 rounded-full bg-(--dot) opacity-40 transition-transform group-hover:scale-125"
           />
           <span className="font-serif text-base font-semibold leading-tight sm:text-lg">
             {t.categories[c]}
           </span>
-          <span className="mt-0.5 text-xs opacity-70">
+          <span className="mt-0.5 text-xs text-muted">
             {fmt(t.product.count, { n: counts[c] ?? 0 })}
           </span>
         </Link>

@@ -17,7 +17,7 @@ export function BenefitsBar() {
           key={text}
           className="flex shrink-0 snap-start items-center gap-2 rounded-full border border-gold/30 bg-ivory px-3.5 py-2 text-[13px] font-medium text-navy sm:justify-center"
         >
-          <Icon className="h-4.5 w-4.5 shrink-0 text-teal" />
+          <Icon className="h-4.5 w-4.5 shrink-0 text-gold" />
           <span className="whitespace-nowrap">{text}</span>
         </li>
       ))}

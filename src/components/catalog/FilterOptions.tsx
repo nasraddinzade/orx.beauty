@@ -35,7 +35,7 @@ function Option({
         type="checkbox"
         checked={checked}
         onChange={onChange}
-        className="h-4.5 w-4.5 shrink-0 accent-teal"
+        className="h-4.5 w-4.5 shrink-0 accent-navy"
       />
       <span className="flex-1 text-navy">{label}</span>
       <span className="text-xs tabular-nums text-muted">{count}</span>

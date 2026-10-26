@@ -44,7 +44,7 @@ export function ActiveChips({ state, brandLabel, onRemoveCat, onRemoveBrand, onC
       <button
         type="button"
         onClick={onClear}
-        className="h-8 rounded-full px-3 text-xs font-semibold text-teal hover:bg-ivory"
+        className="h-8 rounded-full px-3 text-xs font-semibold text-navy underline decoration-gold underline-offset-4"
       >
         {t.catalog.clearAll}
       </button>

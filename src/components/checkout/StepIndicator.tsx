@@ -20,7 +20,7 @@ export function StepIndicator({ current, labels }: Props) {
               aria-current={active ? "step" : undefined}
               className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-semibold ${
                 done
-                  ? "bg-teal text-ivory"
+                  ? "bg-gold text-ivory"
                   : active
                     ? "bg-navy text-ivory"
                     : "border border-gold/50 bg-ivory text-muted"
@@ -38,7 +38,7 @@ export function StepIndicator({ current, labels }: Props) {
             {i < labels.length - 1 && (
               <span
                 aria-hidden="true"
-                className={`h-px min-w-4 flex-1 ${done ? "bg-teal" : "bg-gold/40"}`}
+                className={`h-px min-w-4 flex-1 ${done ? "bg-gold" : "bg-gold/40"}`}
               />
             )}
           </li>

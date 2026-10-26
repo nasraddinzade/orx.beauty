@@ -56,7 +56,7 @@ export function ProductCard({ product, priority, className = "" }: Props) {
         </div>
         <Link
           href={href}
-          className="mt-0.5 line-clamp-2 text-sm font-medium leading-snug text-navy hover:text-teal"
+          className="mt-0.5 line-clamp-2 text-sm font-medium leading-snug text-navy hover:text-navy/60"
           title={name}
         >
           {name}
@@ -70,7 +70,7 @@ export function ProductCard({ product, priority, className = "" }: Props) {
         type="button"
         onClick={handleAdd}
         className={`mt-2.5 inline-flex h-10 w-full items-center justify-center gap-1.5 rounded-xl px-2 text-sm font-semibold transition-colors ${
-          added ? "bg-teal/15 text-teal" : "bg-navy text-ivory hover:bg-teal"
+          added ? "bg-rose/35 text-navy" : "bg-navy text-ivory hover:bg-rose hover:text-navy"
         }`}
       >
         {added ? (

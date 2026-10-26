@@ -72,7 +72,7 @@ export function CatalogClient() {
   return (
     <div className="mx-auto max-w-6xl px-4">
       <nav aria-label="breadcrumb" className="pt-4 text-xs text-muted">
-        <Link href="/" className="hover:text-teal">
+        <Link href="/" className="hover:text-navy/60">
           {t.common.home}
         </Link>
         <span className="mx-1.5">/</span>
@@ -107,7 +107,7 @@ export function CatalogClient() {
           <button
             type="button"
             onClick={clearAll}
-            className="mt-4 inline-flex h-11 items-center rounded-xl bg-navy px-5 text-sm font-semibold text-ivory hover:bg-teal"
+            className="mt-4 inline-flex h-11 items-center rounded-xl bg-navy px-5 text-sm font-semibold text-ivory hover:bg-rose hover:text-navy"
           >
             {t.catalog.clearAll}
           </button>

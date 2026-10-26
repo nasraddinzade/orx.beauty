@@ -72,7 +72,7 @@ export function Gallery({ product, alt }: Props) {
               aria-current={i === index}
               onClick={() => goTo(i)}
               className={`h-2 rounded-full transition-all ${
-                i === index ? "w-5 bg-teal" : "w-2 bg-navy/25"
+                i === index ? "w-5 bg-navy" : "w-2 bg-navy/25"
               }`}
             />
           ))}
@@ -90,7 +90,7 @@ export function Gallery({ product, alt }: Props) {
               aria-current={i === index}
               onClick={() => setIndex(i)}
               className={`overflow-hidden rounded-xl border-2 transition-colors ${
-                i === index ? "border-teal" : "border-transparent hover:border-gold/50"
+                i === index ? "border-gold" : "border-transparent hover:border-gold/50"
               }`}
             >
               <ProductImage product={product} src={src} alt="" sizes="80px" padding="p-1.5" />

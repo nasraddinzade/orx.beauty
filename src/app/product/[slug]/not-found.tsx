@@ -10,7 +10,7 @@ export default function ProductNotFound() {
       <h1 className="font-serif text-2xl font-semibold text-navy">{t.product.notFound}</h1>
       <Link
         href="/catalog"
-        className="mt-5 inline-flex h-11 items-center rounded-xl bg-navy px-5 text-sm font-semibold text-ivory hover:bg-teal"
+        className="mt-5 inline-flex h-11 items-center rounded-xl bg-navy px-5 text-sm font-semibold text-ivory hover:bg-rose hover:text-navy"
       >
         {t.cart.goCatalog}
       </Link>

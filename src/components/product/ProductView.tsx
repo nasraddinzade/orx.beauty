@@ -38,7 +38,7 @@ export function ProductView({ product, related }: Props) {
       type="button"
       onClick={handleAdd}
       className={`inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold transition-colors ${
-        added ? "bg-teal/15 text-teal" : "bg-navy text-ivory hover:bg-teal"
+        added ? "bg-rose/35 text-navy" : "bg-navy text-ivory hover:bg-rose hover:text-navy"
       }`}
     >
       {added ? (
@@ -80,12 +80,12 @@ export function ProductView({ product, related }: Props) {
             <Price price={product.price} oldPrice={product.oldPrice} size="lg" />
             <span
               className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium ${
-                inStock ? "bg-teal/15 text-teal" : "bg-rose/40 text-navy"
+                inStock ? "bg-rose/35 text-navy" : "bg-rose/40 text-navy"
               }`}
             >
               <span
                 aria-hidden="true"
-                className={`h-1.5 w-1.5 rounded-full ${inStock ? "bg-teal" : "bg-navy"}`}
+                className={`h-1.5 w-1.5 rounded-full ${inStock ? "bg-rose" : "bg-navy"}`}
               />
               {inStock ? t.product.inStock : t.product.outOfStock}
             </span>

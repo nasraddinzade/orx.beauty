@@ -43,7 +43,7 @@ export function Header() {
                   onClick={() => setLocale(code)}
                   aria-pressed={active}
                   className={`rounded-full px-2.5 py-1 transition-colors ${
-                    active ? "bg-teal text-ivory" : "text-navy hover:bg-cream"
+                    active ? "bg-navy text-ivory" : "text-navy hover:bg-cream"
                   }`}
                 >
                   {code.toUpperCase()}
@@ -59,7 +59,7 @@ export function Header() {
           >
             <CartIcon />
             {hydrated && count > 0 && (
-              <span className="absolute -right-0.5 -top-0.5 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-teal px-1 text-[11px] font-bold leading-none text-ivory">
+              <span className="absolute -right-0.5 -top-0.5 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-rose px-1 text-[11px] font-bold leading-none text-navy">
                 {count}
               </span>
             )}

@@ -85,7 +85,7 @@ export function FilterSheet(props: Props) {
           <button
             type="button"
             onClick={onClose}
-            className="h-11 flex-1 rounded-xl bg-navy text-sm font-semibold text-ivory hover:bg-teal"
+            className="h-11 flex-1 rounded-xl bg-navy text-sm font-semibold text-ivory hover:bg-rose hover:text-navy"
           >
             {fmt(t.catalog.apply, { n: resultCount })}
           </button>

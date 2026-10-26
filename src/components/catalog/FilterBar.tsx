@@ -49,13 +49,13 @@ function Dropdown({
         onClick={() => setOpen((v) => !v)}
         className={`inline-flex h-10 items-center gap-1.5 rounded-xl border px-3.5 text-sm font-medium transition-colors ${
           count > 0
-            ? "border-teal bg-teal/10 text-navy"
+            ? "border-rose bg-rose/25 text-navy"
             : "border-gold/40 bg-ivory text-navy hover:bg-cream"
         }`}
       >
         {label}
         {count > 0 && (
-          <span className="rounded-full bg-teal px-1.5 text-[11px] font-bold text-ivory">
+          <span className="rounded-full bg-navy px-1.5 text-[11px] font-bold text-ivory">
             {count}
           </span>
         )}
@@ -99,14 +99,14 @@ export function FilterBar(props: Props) {
           onClick={onOpenSheet}
           className={`inline-flex h-10 items-center gap-2 rounded-xl border px-3.5 text-sm font-medium ${
             activeCount > 0
-              ? "border-teal bg-teal/10 text-navy"
+              ? "border-rose bg-rose/25 text-navy"
               : "border-gold/40 bg-ivory text-navy"
           }`}
         >
           <FilterIcon className="h-4.5 w-4.5" />
           {t.catalog.filters}
           {activeCount > 0 && (
-            <span className="rounded-full bg-teal px-1.5 text-[11px] font-bold text-ivory">
+            <span className="rounded-full bg-navy px-1.5 text-[11px] font-bold text-ivory">
               {activeCount}
             </span>
           )}
