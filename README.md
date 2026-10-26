@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ORX beauty — прототип интернет-магазина
 
-## Getting Started
+Демонстрационная витрина магазина косметики ORX beauty (Баку, Насими, Şəmsi Bədəlbəyli 100A).
+Это не продакшен: заказы не обрабатываются, оплата имитируется, персональные данные никуда не отправляются.
 
-First, run the development server:
+Стек: Next.js (App Router), TypeScript, Tailwind CSS. Бэкенда, базы и API-роутов нет.
+
+## Запуск
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Сайт откроется на http://localhost:3000. Продакшен-сборка: `npm run build`, затем `npm run start`.
+Деплой на Vercel: подключить репозиторий, настроек не требуется.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Где что лежит
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Что | Где |
+| --- | --- |
+| Товары (39 позиций, цены, двуязычные тексты) | `src/data/products.ts` |
+| Тексты интерфейса AZ / RU | `src/i18n/az.ts`, `src/i18n/ru.ts` |
+| Плашка демо, контакты, стоимость доставки, срок BÖL ÖDƏ | `src/config.ts` |
+| Скрипт скачивания фото | `scripts/fetch-images.sh` |
+| Фото товаров | `public/products/` |
+| Плитка-плейсхолдер для товаров без фото | `src/lib/placeholder.ts` |
+| Корзина (localStorage, React Context) | `src/context/CartContext.tsx`, `src/context/cart-store.ts` |
+| Экраны | `src/app/` — главная, `catalog`, `product/[slug]`, `cart`, `checkout` |
 
-## Learn More
+Описания, составы и способы применения в `products.ts` написаны как черновик по типу продукта и подлежат
+подтверждению магазином. Цены без пометки «подтверждена» помечены комментарием `// qiymət dəqiqləşdirilməlidir`.
 
-To learn more about Next.js, take a look at the following resources:
+## Как перекачать фото
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+bash scripts/fetch-images.sh
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Скрипт кладёт файлы в `public/products/`. Если файл меньше 10 КБ или не является изображением,
+у товара нужно оставить пустой `images: []`, тогда на плитке будет плейсхолдер.
+На момент сборки два кадра палетки Technic (mcgrocer.com) не скачались, у этого товара стоит плейсхолдер.
 
-## Deploy on Vercel
+## Как подставить свои снимки
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Положить файл в `public/products/`, например `public/products/huda-lovefest.jpg`.
+   Квадратные кадры на светлом фоне смотрятся лучше всего, картинка всегда вписывается в квадрат.
+2. В `src/data/products.ts` у нужного товара указать путь:
+   `images: ["/products/huda-lovefest.jpg"]`. Несколько путей — несколько кадров в галерее.
+3. Перезапустить `npm run dev` не нужно, достаточно обновить страницу.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Как выключить плашку демо
+
+В `src/config.ts` поставить:
+
+```ts
+export const SHOW_DEMO_BANNER = false;
+```
+
+## Что ещё имитируется
+
+- Оплата: кнопка «Ödə / Оплатить», спиннер 1,5 с, экран успеха с номером вида `ORX-2026-0000`,
+  сгенерированным на клиенте. Корзина после этого очищается.
+  Реальным платёжным шлюзом в Азербайджане будет epoint.az, сейчас это заглушка
+  в `src/components/checkout/CheckoutFlow.tsx`.
+- Доставка: суммы в `DELIVERY_PRICE` в `src/config.ts` проставлены условно.
+- Наличие: у всех товаров показан бейдж «в наличии».
